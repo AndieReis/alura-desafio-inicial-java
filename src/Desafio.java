@@ -52,7 +52,7 @@ public class Desafio {
                         System.out.println("Informe o valor da transferência: ");
                         double valorDaTransferencia = leitura.nextDouble();
 
-                        if (valorDaTransferencia < saldoAtualizado) {
+                        if (valorDaTransferencia <= saldoAtualizado) {
                             saldoAtualizado -= valorDaTransferencia;
                             System.out.println("Saldo atualizado: R$ %.2f. ".formatted(saldoAtualizado));
                         } else {
