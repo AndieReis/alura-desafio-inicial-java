@@ -40,13 +40,13 @@ public class Desafio {
 
                 switch (opcaoEscolhida) {
                     case 1:
-                        System.out.println("Saldo atualizado: R$ %.2f. ".formatted(saldoAtualizado));
+                        System.out.printf("Saldo atualizado: R$ %.2f. %n", saldoAtualizado);
                         break;
                     case 2:
                         System.out.println("Informe o valor do depósito: ");
                         double valorDeposito = leitura.nextDouble();
                         saldoAtualizado += valorDeposito;
-                        System.out.println("Saldo atualizado: R$ %.2f. ".formatted(saldoAtualizado));
+                        System.out.printf("Saldo atualizado: R$ %.2f. %n", saldoAtualizado);
                         break;
                     case 3:
                         System.out.println("Informe o valor da transferência: ");
@@ -54,10 +54,10 @@ public class Desafio {
 
                         if (valorDaTransferencia <= saldoAtualizado) {
                             saldoAtualizado -= valorDaTransferencia;
-                            System.out.println("Saldo atualizado: R$ %.2f. ".formatted(saldoAtualizado));
+                            System.out.printf("Saldo atualizado: R$ %.2f. %n", saldoAtualizado);
                         } else {
                             System.out.println("Saldo insuficiente para efetuar a transação.");
-                            System.out.println("Saldo disponível : R$%.2f".formatted(saldoAtualizado));
+                            System.out.printf("Saldo disponível : R$%.2f%n", saldoAtualizado);
                         }
 
                         break;
